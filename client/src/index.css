@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+html { scroll-behavior: smooth; }
+body { background: #060a12; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
